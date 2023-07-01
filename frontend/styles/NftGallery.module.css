@@ -1,0 +1,175 @@
+.nft_gallery_page_container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 3rem;
+	align-items: center;
+}
+
+.nft_gallery {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1224px;
+	align-items: center;
+	padding: 0 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.nfts_display {
+	display: grid;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	justify-content: center;
+	grid-template-columns: repeat(4, 1fr);
+	border-radius: 8px;
+	padding-top: 1rem;
+}
+
+.header {
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.header_info {
+	color: #000000;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+.card_container {
+	background-color: #ffffff;
+	width: 100%;
+	width: 236px;
+	max-height: 384px;
+	border-radius: 12px;
+	padding: 8px;
+	border: 1px solid #000000;
+	box-shadow: 8px 8px lightcoral;
+	margin: 20px;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.card_container:hover {
+	transform: scale(
+		1.04
+	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.image_container {
+	height: 204px;
+	width: 100%;
+	border-radius: 6px 6px 0 0;
+	margin-bottom: 6px;
+}
+
+.image_container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 2px solid black;
+	
+}
+
+.info_container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.1rem;
+	width: 100%;
+	flex-wrap: wrap;
+	color: #000000;
+}
+.symbol_contract_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	color: #000000;
+}
+.symbol_container {
+	display: flex;
+	align-items: center;
+	color: #000000;
+}
+.contract_container {
+	display: flex;
+	column-gap: 0.3rem;
+	font-size: 12px;
+	font-weight: 300;
+	cursor: pointer;
+	align-items: center;
+	color: #000000;
+}
+
+.title_container {
+	display: flex;
+	align-items: center;
+	height: 3rem;
+	color: #000000;
+}
+
+.title_container h3 {
+	font-weight: normal;
+	font-size: 1.3rem;
+	color: black;
+}
+
+.symbol_container {
+	display: flex;
+	column-gap: 0.3rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: #000000;
+}
+
+.description_container {
+	margin-top: 0.5em;
+	display: -webkit-box;
+	overflow-y: hidden;
+	width: 90%;
+	font-size: 10px;
+	font-weight: 600;
+	color: #000000;
+	line-height: 0.2em;
+	height: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+	.nfts_display {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (max-width: 750px) {
+	.nfts_display {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 560px) {
+	.nfts_display {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.button_container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.button_black {
+	text-align: center;
+	padding: 0.6rem 1rem;
+	background: linear-gradient(
+		140deg,
+		rgba(54, 190, 255, 1) 0%,
+		rgba(115, 63, 241, 1) 100%
+	);
+	border-radius: 3px;
+
+	cursor: pointer;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+}
